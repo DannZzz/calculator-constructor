@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { DragDropContext, Droppable, DropResult } from "react-beautiful-dnd"
+import { DragDropContext, DropResult } from "react-beautiful-dnd"
 import { useAppSelector } from "../../app/hooks"
 import { selectCompute } from "../../features/compute/computeSlice"
 import { reorder } from "../../util/util"

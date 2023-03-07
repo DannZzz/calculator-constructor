@@ -10,7 +10,7 @@ import "./Operators.scss"
 
 export const OperatorsList = {
   "/": "/",
-  x: "*",
+  "×": "*",
   "+": "+",
   "-": "-",
 }

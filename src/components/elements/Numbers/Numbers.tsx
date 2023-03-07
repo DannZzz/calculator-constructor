@@ -23,8 +23,7 @@ const Numbers = React.forwardRef<any, { style?: any; view?: ElementView }>(
     ) {
       if (view.static || mode === "constructor") return
       const target = event.currentTarget
-      console.log(target.id, display)
-      const lastNumber = display.split(/[+/x-]/g).at(-1)
+      const lastNumber = display.split(/[+/×-]/g).at(-1)
 
       if (target.id !== "," && target.id !== "0") {
         if (display === "0") {
