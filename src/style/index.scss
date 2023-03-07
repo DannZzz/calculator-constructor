@@ -1,0 +1,44 @@
+$color-bg: #e5e5e5;
+
+$color-component: #ffffff;
+
+$color-special: #5d5fef;
+
+$color-danger: #ef5d5d;
+
+@mixin flex($items: center, $content: center, $dir: row) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $items;
+  justify-content: $content;
+}
+
+@mixin component-radius {
+  border-radius: 10px;
+}
+
+@mixin component-border($color: $color-bg) {
+  border: 1px solid $color;
+}
+
+@mixin component-shadow {
+  // filter: drop-shadow(0 2px 3px $color-bg);
+  box-shadow: 0 3px 3px $color-bg;
+}
+
+@mixin component-padding {
+  padding: 5px;
+}
+
+@mixin component-font {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.untouchable {
+  opacity: 0.5;
+}
+
+.clickable {
+  cursor: pointer;
+}

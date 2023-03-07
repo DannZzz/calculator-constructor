@@ -1,0 +1,19 @@
+@import "../../../style/index.scss";
+
+.display-container {
+  background: $color-component;
+  @include component-radius;
+  @include component-shadow;
+  @include component-padding;
+
+  .display {
+    background: $color-bg;
+    font-size: xxx-large;
+    border-radius: 10px;
+    @include flex($items: end, $content: end);
+    padding: 0 5px;
+    @include component-font;
+    overflow-x: scroll;
+    width: 100%;
+  }
+}

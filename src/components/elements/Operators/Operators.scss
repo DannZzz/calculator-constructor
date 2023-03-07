@@ -1,0 +1,19 @@
+@import "../../../style/index.scss";
+
+.operators {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  @include component-shadow;
+  @include component-padding;
+  @include component-radius;
+
+  .operator {
+    height: 65px;
+    width: 65px;
+    @include component-border;
+    @include component-radius;
+    @include flex;
+    @include component-font;
+  }
+}

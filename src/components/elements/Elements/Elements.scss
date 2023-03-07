@@ -1,0 +1,10 @@
+@import "../../../style/index.scss";
+
+.elements {
+  @include flex($dir: column);
+  gap: 20px;
+
+  & > * {
+    width: 100%;
+  }
+}

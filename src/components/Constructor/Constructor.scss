@@ -1,0 +1,42 @@
+@import "../../style/index.scss";
+
+.constructor {
+  position: relative;
+  height: 100%;
+  @include flex;
+
+  .preview {
+    width: 300px;
+    height: 585px;
+    @include flex($dir: column, $content: start);
+
+    gap: 20px;
+
+    & > * {
+      width: 100%;
+    }
+
+    &.empty {
+      @include flex($dir: column);
+      border: 3.5px dashed $color-bg;
+      border-radius: 5px;
+
+      &:hover {
+        background: #f0f9ff;
+      }
+    }
+
+    .add-title {
+      width: fit-content;
+      @include flex($dir: column);
+      position: fixed;
+      h3 {
+        color: $color-special;
+      }
+
+      span {
+        color: grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../style/index.scss";
+
+body,
+html {
+  margin: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: $color-bg;
+  @include flex();
+
+  .container {
+    width: 740px;
+    height: 740px;
+    background: $color-component;
+    padding: 30px 50px;
+
+    @include flex();
+    gap: 40px;
+
+    .elements,
+    .constructor {
+      width: 300px;
+    }
+  }
+}

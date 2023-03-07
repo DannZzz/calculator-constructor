@@ -1,0 +1,24 @@
+@import "../../../style/index.scss";
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  @include component-shadow;
+  @include component-padding;
+  @include component-radius;
+
+  .number {
+    height: 65px;
+    background-color: $color-component;
+    @include component-border;
+    @include component-radius;
+    @include flex;
+    @include component-font;
+
+    &.zero {
+      grid-column: 1 / 3;
+    }
+  }
+}

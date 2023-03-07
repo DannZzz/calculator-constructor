@@ -1,0 +1,31 @@
+@import "../../style/index.scss";
+
+.mode {
+  position: absolute;
+  background: $color-bg;
+  font-size: large;
+  top: 0;
+  padding: 1px;
+
+  @include component-font;
+  @include flex;
+
+  .mode-controller {
+    @extend .clickable;
+    padding: 10px 20px;
+    @include flex;
+    gap: 5px;
+
+    .icon {
+      font-size: x-large;
+    }
+
+    &.selected {
+      background: $color-component;
+      cursor: auto;
+      .icon {
+        color: $color-special;
+      }
+    }
+  }
+}

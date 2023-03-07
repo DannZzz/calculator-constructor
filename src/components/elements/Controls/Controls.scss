@@ -1,0 +1,27 @@
+@import "../../../style/index.scss";
+
+.controls {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  @include component-shadow;
+  @include component-padding;
+  @include component-radius;
+
+  .controller {
+    height: 65px;
+    @include component-radius;
+    @include flex;
+    @include component-font;
+    color: $color-component;
+
+    &.clear,
+    &.remove {
+      background: $color-danger;
+    }
+
+    &.equals {
+      background: $color-special;
+    }
+  }
+}
